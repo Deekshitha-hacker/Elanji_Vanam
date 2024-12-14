@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elanji Vanam - Organic Farming</title>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <!-- Updated logo -->
+        <img src="https://i.ibb.co/p435YhB/logo.jpg" alt="Elanji Vanam Logo" class="logo">
+        <div class="title-container">
+            <h1>Elanji Vanam</h1>
+            <h2>UZHUTHU THOZHUVOM</h2> <!-- Subtitle added -->
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="chat.html">Chat</a>
+        </nav>
+    </header>
+
+    <!-- Marketplace Section -->
+    <section id="marketplace">
+        <h2>Organic Products</h2>
+        
+        <!-- Compost Product -->
+        <div class="product">
+            <img src="https://i.ibb.co/d7q843V/compost.jpg" alt="Compost" class="product-image">
+            <div class="product-info">
+                <h3>Organic Compost</h3>
+                <p>High-quality compost for organic farming.</p>
+                <p>₹1,500</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Seed Product -->
+        <div class="product">
+            <img src="https://i.ibb.co/D5gBjMb/seeds.jpg" alt="Seeds" class="product-image">
+            <div class="product-info">
+                <h3>Organic Seeds</h3>
+                <p>Organic seeds for sustainable farming.</p>
+                <p>₹1,200</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Section -->
+    <section id="tutorials">
+        <h2>Learn Organic Farming</h2>
+        <p>Get started with organic farming by learning from our expert tutorials.</p>
+        
+        <div class="tutorial">
+            <img src="https://i.ibb.co/TMy4FL1/tutorial-image.jpg" alt="Tutorial Image" class="tutorial-image">
+            <p>Understanding the basics of composting and seed preparation.</p>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat">
+        <h2>Real-time Chat</h2>
+        <div class="chat-box">
+            <div class="messages" id="messages"></div>
+            <input type="text" id="message-input" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- Login Form Section -->
+    <section id="login">
+        <h2>User Login</h2>
+        <form action="submit-form-url" method="POST" class="vertical-form">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" required />
+            
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required />
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script> <!-- For chat functionality -->
+</body>
+</html>
